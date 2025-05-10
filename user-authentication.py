@@ -31,7 +31,7 @@ class User:
         #Login user and return JWT token
         # get the user's email and password
         # if email and password matches with DB entry, return the JWT access token to the user.
-        # if not, return the error response with messagge: Invalid credentials.
+        # if not, return the error response with message: Invalid credentials.
 
     @staticmethod
     def create_access_token(user: 'User'):
@@ -45,4 +45,4 @@ class User:
         # Reset user password
         # get the user email, match it with DB entry
         # if it matches, get the new password, hash it and store in db against the user entry and return response message: Password updated successfully
-        # if not, return error response iwth message: Email not found
+        # if not, return error response with message: Email not found

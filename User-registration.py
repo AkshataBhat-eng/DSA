@@ -54,4 +54,3 @@ class User:
 user1 = User("akshata", "aks@gmail.com", "secret")
 user1.displayUserInfo()
 user1.registerUser()
-user1.displayAllUser()

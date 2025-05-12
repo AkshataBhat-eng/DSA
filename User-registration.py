@@ -12,9 +12,6 @@ class User:
         self.email = email
         self.password = password
 
-    def displayAllUser(self):
-        print(user_list)
-
     def displayUserInfo(self):
         print("User Information \n")
         print("username:", self.username, "email:", self.email)

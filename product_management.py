@@ -39,8 +39,3 @@ class Product:
         with open(file_path, 'w') as file:
             json.dump(product_list, file)
         print('New product added')
-
-
-p1 = Product('toy',200, 1)
-p1.displayProductInfo()
-p1.createProduct()

@@ -1,0 +1,14 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment folder
+venv/
+
+# Other typical files to ignore in Python projects
+*.log
+*.env
+*.db
+*.sqlite3

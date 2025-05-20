@@ -1,0 +1,2 @@
+TRUNCATE Employees;
+DROP TABLE Employees;

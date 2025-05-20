@@ -1,0 +1,14 @@
+CREATE DATABASE Company;
+USE Company;
+CREATE TABLE Employees(
+    ID INT, 
+    Name VARCHAR(20), 
+    Email VARCHAR(30),
+    Department VARCHAR(20),
+    DOB DATE,
+    Salary DECIMAL,
+    is_Active BOOLEAN
+);
+INSERT INTO Employees(ID, Name, Email, Department, DOB, Salary, is_Active) VALUES (1, 'Akshata', 'akshata@gmail.com', 'Engineering', '1996-09-21', '20000',
+true);
+INSERT INTO Employees(ID, Name, Email, Department, DOB, Salary, is_Active) VALUES (2, 'Ajay', 'ajay@gmail.com', 'Accounts', '1996-09-26', '20000', true);

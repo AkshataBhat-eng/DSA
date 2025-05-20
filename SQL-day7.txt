@@ -1,0 +1,19 @@
+CREATE TABLE Employees (
+    ->   ID INT,
+    ->   Name VARCHAR(255),
+    ->   Department VARCHAR(255)
+    -> );
+
+INSERT INTO Employees (ID, Name, Department) VALUES
+    -> (1, 'Alice Johnson', 'HR'),
+    -> (2, 'Bob Smith', 'Engineering'),
+    -> (3, 'Carol Lee', 'Sales'),
+    -> (4, 'David Kim', 'HR'),
+    -> (5, 'Eva Brown', 'Engineering'),
+    -> (6, 'Frank Wilson', 'Sales'),
+    -> (7, 'Grace Chen', 'HR'),
+    -> (8, 'Henry Patel', 'Engineering'),
+    -> (9, 'Ivy Thomas', 'Sales'),
+    -> (10, 'Jack White', 'HR');
+
+SELECT Department, COUNT(*) AS EmployeeCount FROM Employees GROUP BY Department HAVING COUNT(*)>2  ORDER BY Department DESC;

@@ -1,0 +1,17 @@
+1) SELECT * FROM Employees CROSS JOIN Department;
+
+2) SELECT DISTINCT e.* from Employees e INNER JOIN  Department d ON e.Department = d.DepartmentName; 
+
+3) SELECT e.ID AS EmployeeID, e.Name AS Name, d.DepartmentID, d.DepartmentName
+    FROM Employees e LEFT JOIN Department d ON e.Department = d.DepartmentName
+    UNION
+    SELECT e.ID AS EmployeeID, e.Name AS Name, d.DepartmentID, d.DepartmentName
+    FROM Employees e RIGHT JOIN Department d ON e.Department = d.DepartmentName;
+
+4) SELECT DISTINCT e.* from Employees e INNER JOIN  Department d ON e.Department = d.DepartmentName; 
+
+5) SELECT e.ID AS EmployeeID,e.Name AS EmployeeName,d.DepartmentID,d.DepartmentName
+    FROM Employees e LEFT JOIN Department d ON e.Department = d.DepartmentName;
+
+6) SELECT d.DepartmentID,d.DepartmentName,e.ID AS EmployeeID,e.Name AS EmployeeName
+    FROM Department d INNER JOIN Employees e ON d.DepartmentName = e.Department;
